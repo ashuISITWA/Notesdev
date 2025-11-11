@@ -10,6 +10,7 @@ import FAQSection from "@/components/faq-section";
 import CTASection from "@/components/cta-section";
 import Header from "./components/header";
 import FooterSection from "@/components/footer-section";
+import HeroBanner from "@/components/hero-banner";
 
 export default function Home() {
   const [content, setContent] = useState("");
@@ -73,12 +74,12 @@ export default function Home() {
           onLoadDocument={handleLoadDocument}
         />
       )}
- 
-      <TestimonialsSection />
-        <PricingSection />
-        <FAQSection />
-        <CTASection />
-        <FooterSection />
+
+      <HeroBanner />
+      <PricingSection />
+      <FAQSection />
+      <CTASection />
+      <FooterSection />
     </>
   );
 }

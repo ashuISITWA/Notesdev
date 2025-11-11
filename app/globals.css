@@ -122,10 +122,19 @@
   }
 }
 
-.notesbox .simple-editor-wrapper .tiptap-toolbar {
-	border-bottom: 1px solid #e5e7eb  !important;
+.notesbox {
+	position: relative;
 }
-
+.notesbox:after{
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  z-index: 3;
+  background: #e1e3e1;;
+}
 .tiptap-popover{
 	box-shadow: 0px 0px 2px rgba(0,0,0,0.2)  !important;
 	border-radius: 10px  !important;
@@ -150,4 +159,25 @@
 }
 .tiptap-button-group{
   background: #fff !important;
+}
+.notesbox .simple-editor-wrapper{
+  height: calc(100vh - 48px) !important;
+  width: 648px !important;
+  margin: 0 auto !important;
+} 
+.notesbox .tiptap-toolbar *{
+color: #5b5b5b !important;
+fill:#5b5b5b !important;
+}
+.notesbox .tiptap-toolbar .tiptap-toolbar-group > div button{
+  color: #5b5b5b !important;
+  fill:#5b5b5b !important;
+}
+.notesbox .tiptap-toolbar .tiptap-toolbar-group > div button:hover{
+  color: #000 !important;
+  fill:#000 !important;
+}
+.notesbox .tiptap-toolbar .tiptap-toolbar-group > div button:active{
+  color: #000 !important;
+  fill:#000 !important;
 }
